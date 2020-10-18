@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ 
+body
+
+.header{
+    padding: 0px;
+    text-align: center;
+    background-color: black;
+    border-radius: 10px;
+}
+
+footer {
+    top: 100;
+    padding: 10px;
+    height: 160px;
+    width="1333px";
+    background:linear-gradient(90deg, #0d0005 1%,#250586 100%,#3105df 100%,#3105df 100% );
+    color: silver;
+    text-align: center;
+    text-decoration:bold;
+    border-radius: 10px;
+}
+.nav{
+    list-style-type: none;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    background:linear-gradient(90deg, #0d0005 1%,#250586 100%,#3105df 100%,#3105df 100% );
+    border-radius: 10px;
+    top: 0;
+    font-family: "Gill Sans", sans-serif;
+}
+
+li a {
+  display: block;
+  color: silver;
+  padding: 30px;
+  text-decoration: none;
+  float: right;
+  position: relative; right: 30px;
+}
+li a:hover {
+  background-color:blue;
+  color: white;
+  border-radius: 100px;
+  padding: 20px;
+}
+.id {
+        font-size: 20px; 
+        background-color: white;
+        width: 350px;
+        border: 5px solid silver;
+        padding: 40px;
+        margin: 10px;
+        position: relative;
+        bottom: 120px;
+        left: 50px;
+        font-family: Gill Sans, sans-serif
+      }
+p.impact {
+  font-family: Impact, Charcoal, sans-serif;
+}
+.monospace {
+  font-family: "Lucida Console", Courier, monospace;
+}
+
+
+input[type=text]{
+  height:50px;
+  width:50px;
+  padding: 25px 20px;
+  margin: 8px;
+  display: inline-block;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.star{
+  font-size: 30px;
+    padding: 10px;
+    text-align: left;
+    color: black;
+    position: relative; top: 60px; left: 30px;
+    font-family: Gill Sans, sans-serif
+}  
+
+
+</style>
+</head>
+<body background="back.jpg">
+  
+  <div class="header"> <img src="logo.png" width="250px"> </div>
+
+  <div class="nav">
+    <li style="position: relative; right:20px;"><a href=about.html> AboutUS</a></li>
+    <li style="position: relative; right:60px;"><a href=registration.html>Registration</a></li>
+    <li style="position: relative; right:100px;"><a href=contact.html> ContactUS</a></li>
+    <li style="position: relative; right:140px;"><a href=news.html>News & Event</a></li>
+    <li style="position: relative; right:180px;"><a href=home.html>Home</a></li>
+  </div>
+      
+      <div class="star">GET IN TOUCH</div>
+
+      <iframe style="position: relative; left:800px; top: 90px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.402443286577!2d112.58684021477912!3d-7.957296294268608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78825bc65e176b%3A0x954b33ee83283be2!2sUniversitas%20Ma%20Chung!5e0!3m2!1sid!2sid!4v1602946592129!5m2!1sid!2sid" width="400" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe><br>
+
+      <form >
+        <textarea id="subject" name="subject" placeholder="Enter your Message " style=" position: relative;bottom: 250px; left: 30px; width: 550px; height:200px;"></textarea>
+        <textarea id="subject" name="subject" placeholder="Enter your Name " style=" position: relative;bottom: 480px; right: 530px; width: 550px; height:30px;"></textarea>
+        
+      </form>
+      <form style="position: relative; bottom: 230px; left:70px;"><button onclick="contact()">Submit</button></p> </form>
+        
+      
+      <script>
+        function contact() {
+        alert("Your message will be received shortly");
+        }
+      </script>
+
+        <p class="id"> Telp (0341) 550 171 
+        <br>Universitas Ma Chung Villa Puncak Tidar N-01, 65151, Malang, Jawa Timur, Indonesia </br>
+    
+    <footer>
+      <img src="UMC.png" style= "width: 150px; float: left;">
+      <p><a href=https://www.instagram.com/universitasmachung/?hl=en><img src="ig.png" style="width: 40px; float: right; position: relative; top:20px;" ></a>
+      <p><a href=https://www.facebook.com/MaChung.Universitas/?rf=233095563546765><img src="fb.png" style="width: 40px; float: right; position: relative; top:20px;" ></a>
+      <p><a href=https://twitter.com/ma_chung?lang=en><img src="twit.png" style="width: 40px; float: right; position: relative; top:20px;" ></a>
+      <p style="position: relative; left: 585px;"> GET IN SOCIAL </p>
+      <p> © 2020 All rights reserved- Robotics Team Machung</p>
+    </footer>
+</body>
+</html>

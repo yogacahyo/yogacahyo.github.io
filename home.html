@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body
+.header{
+    padding: 0px;
+    text-align: center;
+    background-color: black;
+    border-radius: 10px;
+}
+footer {
+    top: 100;
+    padding: 10px;
+    height: 160px;
+    width="1333px";
+    background:linear-gradient(90deg, #0d0005 1%,#250586 100%,#3105df 100%,#3105df 100% );
+    color: silver;
+    text-align: center;
+    text-decoration:bold;
+    border-radius: 10px;
+}
+.nav{
+    list-style-type: none;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    background:linear-gradient(90deg, #0d0005 1%,#250586 100%,#3105df 100%,#3105df 100% );
+    border-radius: 10px;
+    top: 0;
+    font-family: "Gill Sans", sans-serif;
+}
+li a {
+  display: block;
+  color: silver;
+  padding: 30px;
+  text-decoration: none;
+  float: right;
+  position: relative; right: 30px;
+}
+li a:hover {
+  background-color:blue;
+  color: white;
+  border-radius: 100px;
+  padding: 20px;
+}
+.acme {
+  font-family: 'Acme';font-size: 12px;
+}
+.huruf{
+  background-color: snow; 
+  width:500px;
+  position: relative;
+  left: 20px;
+}
+.monospace {
+  font-family: Gill Sans, sans-serif;
+}
+#b {display: none;}
+</style>
+</head>
+<body background="back.jpg">
+  
+  <div class="header"> <img src="logo.png" width="250px"> </div>
+  
+  <div class="nav">
+    <li style="position: relative; right:20px;"><a href=about.html> AboutUS</a></li>
+    <li style="position: relative; right:60px;"><a href=registration.html>Registration</a></li>
+    <li style="position: relative; right:100px;"><a href=contact.html> ContactUS</a></li>
+    <li style="position: relative; right:140px;"><a href=news.html>News & Event</a></li>
+    <li style="position: relative; right:180px;"><a href=home.html>Home</a></li>
+  </div>
+    <img src="mdc1.png" height="600px" width="1333px" style="border-radius: 10px;">
+
+
+  <div class="monospace" style="background-color: snow; width: 400px; margin: 40px; position: relative; left: 700px; "> 
+    <h1 style="text-align: center;">Arduino</h1> 
+    <img src="ard12.jpg" style="width: 400px;">
+    <p style="width: 400px; font-size: 20px; ">Arduino adalah pengendali mikro single-board yang bersifat sumber terbuka, 
+      diturunkan dari Wiring platform, dirancang untuk memudahkan penggunaan elektronik dalam berbagai bidang. 
+      Perangkat kerasnya memiliki prosesor Atmel AVR dan softwarenya memiliki bahasa pemrograman sendiri.</p> 
+  </div>
+
+
+  <div class="monospace" style="background-color: snow; width: 400px; margin: 40px; 
+  position: relative; left: 150px; bottom: 610px;"> 
+    <h1 style="text-align: center;">Mouse Inersia</h1> 
+    <img src="ard.jpeg" style="width: 400px;">
+    <p style="width: 400px; font-size: 20px; ">Salah satu dari Team Robotik Universitas MaChung berhasil membuat Mouse Inersia, yang akan dibawa mengikuti lomba mewakili kampus, 
+    sistem mouse inesia adalah sebagai berikut<span id="a">...</span><span id="b">Mouse inersia genggam memberikan data input ke komputer 
+      yang darinya komputer dapat menentukan perpindahan translasi dan sudut mouse. Mouse menyertakan akselerometer untuk menghasilkan 
+      sinyal keluaran dengan besaran yang sebanding dengan percepatan translasi mouse dalam tiga arah non-paralel. Pasangan akselerometer 
+      ini diposisikan untuk mendeteksi percepatan di sepanjang sumbu sistem koordinat kartesian sehingga percepatan sudut mouse 
+      pada sumbu rotasi mana pun menyebabkan perbedaan yang mewakili besarnya sinyal keluaran dari satu atau lebih 
+      pasangan akselerometer ini.</span></p>
+
+    <button onclick="textmore()" id="myBtn">Read more</button>
+  </div>
+  
+
+    <script>
+      function textmore() {
+        var x = document.getElementById("a");
+        var y = document.getElementById("b");
+        var btnText = document.getElementById("myBtn");
+          
+        if (a.style.display === "none") {
+          a.style.display = "inline";
+          btnText.innerHTML = "Read more"; 
+          y.style.display = "none";
+        } else {
+          a.style.display = "none";
+          btnText.innerHTML = "Read less"; 
+          y.style.display = "inline";
+        }
+      }
+          </script>
+    
+      <footer>
+        <img src="UMC.png" style= "width: 150px; float: left;">
+        <p><a href=https://www.instagram.com/universitasmachung/?hl=en><img src="ig.png" style="width: 40px; float: right; position: relative; top:20px;" ></a>
+        <p><a href=https://www.facebook.com/MaChung.Universitas/?rf=233095563546765><img src="fb.png" style="width: 40px; float: right; position: relative; top:20px;" ></a>
+        <p><a href=https://twitter.com/ma_chung?lang=en><img src="twit.png" style="width: 40px; float: right; position: relative; top:20px;" ></a>
+        <p style="position: relative; left: 585px;"> GET IN SOCIAL </p>
+        <p> © 2020 All rights reserved- Robotics Team Machung</p>
+      </footer>
+</body>
+</html>
